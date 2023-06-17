@@ -29,10 +29,11 @@ jobs:
       
       - name: Install dependencies
         run: pip install -r requirements.txt
-        
-        runs:
-           using: 'node16'
-           main: 'main.js
+      
+      - name: Update nodejs
+        run:
+          using: 'node16'
+          main: 'github-action-runtime/index.js'
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
